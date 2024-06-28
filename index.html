@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações - Iara Games</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      font-size: 16px; /* Tamanho base para cálculos de rem */
+    }
+    body, html {
+      height: 100%; /* Garantir que body e html ocupem toda a altura da viewport */
+    }
+    .navbar {
+      background-color: #013881; /* Cor de fundo da navbar */
+    }
+    .sidebar {
+      height: 100vh; /* Altura total da viewport para a sidebar */
+      background-color: #f8f9fa; /* Cor de fundo da sidebar */
+      padding-top: 1.25rem; /* 20px de padding no topo */
+    }
+    .sidebar .nav-link {
+      color: #333; /* Cor dos links na sidebar */
+    }
+    .sidebar .nav-link.active {
+      font-weight: bold; /* Negrito para o link ativo */
+      background-color: #e9ecef; /* Fundo claro para o link ativo */
+    }
+    .breadcrumb {
+      background-color: #f8f9fa; /* Cor de fundo do breadcrumb */
+    }
+    .badge-danger {
+      background-color: #dc3545; /* Cor de fundo para badges de perigo */
+    }
+    .badge-success {
+      background-color: #28a745; /* Cor de fundo para badges de sucesso */
+    }
+    .config-navbar {
+      background-color: #f8f9fa; /* Fundo claro para a navbar de configurações */
+      padding: 0.75rem 1.25rem; /* 12px 20px de padding */
+      margin-bottom: 1.25rem; /* 20px de margem inferior */
+    }
+    .main-content {
+      flex: 1; /* Permitir que o conteúdo principal cresça para preencher o espaço disponível */
+      padding: 1.25rem; /* 20px de padding */
+      overflow-y: auto; /* Habilitar rolagem vertical */
+    }
+    .d-flex-full-height {
+      display: flex; /* Usar flexbox */
+      height: 100%; /* Altura total da viewport */
+    }
+    .border-respiro {
+      padding: 1.5rem; /* Espaçamento ao redor do conteúdo principal */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar principal -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="images/Logo.png" alt="Logo Iara Games" style="height: 2.5rem;"> <!-- Placeholder para o logo -->
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Catálogos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fórum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Suporte</a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+    </form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="images/Imagem do WhatsApp de 2024-05-06 à(s) 10.38.35_321d2bcf.jpg" alt="User Icon" style="height: 1.5rem;"> <!-- Placeholder para o ícone de usuário -->
+          Login
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Container principal com flexbox para ocupar a altura total -->
+<div class="container-fluid d-flex-full-height border-respiro">
+  <div class="row flex-grow-1">
+    <!-- Sidebar -->
+    <nav class="col-md-3 d-none d-md-block sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <!-- Links da sidebar -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Perfil de Usuário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-bell"></i> Preferências de Notificação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-shield-alt"></i> Configurações de Privacidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-link"></i> Gerenciamento de Conexões</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-universal-access"></i> Interface e Acessibilidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-lock"></i> Segurança da Conta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-language"></i> Preferências de Idioma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-credit-card"></i> Gerenciamento de Pagamentos e Assinaturas</a>
+          </li>
+        </ul>
+      </div>
+      <iframe src='plugins/clima/index.html' style='border:0px #ffffff none;' name='myiFrame' scrolling='no' frameborder='0' marginheight='0px' marginwidth='0px' height='800px' width='600px' allowfullscreen></iframe>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 main-content">
+      <!-- Navbar de configurações -->
+      <nav class="config-navbar">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Configurações</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gerenciamento de Pagamentos e Assinaturas</li>
+        </ol>
+      </nav>
+
+      <!-- Atividade recente -->
+      <h2>Atividade recente</h2>
+      <ul class="list-group mb-4">
+        <!-- Itens de atividade recente -->
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge badge-danger mr-3"><i class="fas fa-sync-alt"></i> Assinatura Renovada</span>
+            Assinatura 1
+          </div>
+          <span>24/05/2024</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge badge-danger mr-3"><i class="fas fa-sync-alt"></i> Assinatura Renovada</span>
+            Assinatura 6
+          </div>
+          <span>20/05/2024</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge badge-success mr-3"><i class="fas fa-money-bill-wave"></i> Pagamento</span>
+            Assinatura 2
+          </div>
+          <span>R$ 15,00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge badge-success mr-3"><i class="fas fa-money-bill-wave"></i> Pagamento</span>
+            Assinatura 3
+          </div>
+          <span>R$ 20,00</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span class="badge badge-success mr-3"><i class="fas fa-money-bill-wave"></i> Pagamento</span>
+            Assinatura 4
+          </div>
+          <span>R$ 16,00</span>
+        </li>
+      </ul>
+
+      <!-- Botões de ações -->
+      <button class="btn btn-outline-primary btn-block mb-2">Adicionar Assinatura</button>
+      <button class="btn btn-outline-secondary btn-block mb-2">Cancelar Assinatura</button>
+      <button class="btn btn-primary btn-block">Gerenciar todas Assinaturas</button>
+    </main>
+  </div>
+</div>
+
+<!-- Scripts do Bootstrap e Font Awesome -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
